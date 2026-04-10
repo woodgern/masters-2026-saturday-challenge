@@ -25,6 +25,31 @@ const DEFAULT_HOLE_VALUES = {
   18: 0.232,
 };
 
+const PLAYER_STRENGTH_ADJUSTMENTS = {
+  "Scottie Scheffler": -0.4,
+  "Jon Rahm": -0.4,
+  "Rory McIlroy": -0.4,
+  "Bryson DeChambeau": -0.4,
+  "Ludvig Aberg": -0.4,
+  "Xander Schauffele": -0.4,
+  "Cameron Young": -0.2,
+  "Tommy Fleetwood": -0.2,
+  "Matt Fitzpatrick": -0.2,
+  "Hideki Matsuyama": -0.2,
+  "Justin Rose": -0.2,
+  "Brooks Koepka": -0.2,
+  "Jordan Spieth": -0.2,
+  "Viktor Hovland": -0.2,
+  "Patrick Cantlay": -0.1,
+  "Collin Morikawa": -0.1,
+  "Shane Lowry": -0.1,
+  "Joaquin Niemann": -0.1,
+  "Patrick Reed": -0.1,
+  "Justin Thomas": -0.1,
+  "Max Homa": -0.1,
+  "Jason Day": -0.1,
+};
+
 const SAMPLE_DATA = {
   sourceLabel: "Using bundled sample data",
   holeValues: DEFAULT_HOLE_VALUES,
@@ -120,13 +145,15 @@ function getExpectedRemainingValue(player, holeValues) {
 
 function enrichPlayer(player, holeValues) {
   const expectedRemaining = getExpectedRemainingValue(player, holeValues);
-  const expectedScore = Number((player.currentScore + expectedRemaining).toFixed(2));
-  const price = Math.round(4 + 13 * (1.105 ** (-expectedScore)));
+  const strengthAdjustment = PLAYER_STRENGTH_ADJUSTMENTS[player.name] || 0;
+  const expectedScore = Number((player.currentScore + expectedRemaining + strengthAdjustment).toFixed(2));
+  const price = Math.round(4 + 16 * (1.11 ** (-expectedScore)));
 
   return {
     ...player,
     remainingHoles: getRemainingHoles(player),
     expectedRemaining,
+    strengthAdjustment,
     expectedScore,
     price,
   };
@@ -405,7 +432,10 @@ function renderRoster() {
     const thruLabel = player.finished ? "F" : player.currentHole || "--";
     const positionLabel = player.position || "--";
     main.innerHTML = `
-      <span class="roster-name">${player.name}</span>
+      <div class="roster-head">
+        <span class="roster-name">${player.name}</span>
+        ${state.locked ? `<span class="player-price roster-price">${formatMoney(displayPrice)}</span>` : ""}
+      </div>
       <span class="roster-meta">${state.locked ? "" : "Selected golfer"}</span>
       <div class="roster-metrics">
         <div>
@@ -421,8 +451,8 @@ function renderRoster() {
           <strong>${positionLabel}</strong>
         </div>
         <div>
-          <span>Price</span>
-          <strong>${formatMoney(displayPrice)}</strong>
+          <span>Expected</span>
+          <strong>${formatScore(player.expectedScore)}</strong>
         </div>
       </div>
       ${buildScorecardMarkup(player)}

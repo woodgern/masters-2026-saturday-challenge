@@ -286,9 +286,7 @@ summary {
 
 .roster-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 12px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
   padding: 16px;
   background: linear-gradient(180deg, #fffef9, #f8f1e3);
 }
@@ -298,9 +296,20 @@ summary {
   gap: 10px;
 }
 
+.roster-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
 .roster-name {
   font-size: 1.06rem;
   font-weight: 700;
+}
+
+.roster-price {
+  flex: 0 0 auto;
 }
 
 .roster-meta {
