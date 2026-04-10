@@ -3,6 +3,8 @@ const SETTINGS_KEY = "masters-saturday-charge-settings-v1";
 const SALARY_CAP = 100;
 const ROSTER_SIZE = 5;
 const AUTO_REFRESH_MS = 60_000;
+const MASTERS_SCORES_URL = "https://www.masters.com/en_US/scores/feeds/2026/scores.json";
+const FALLBACK_LIVE_JSON_URL = "./live.json";
 
 const DEFAULT_HOLE_VALUES = {
   1: 0.236,
@@ -78,7 +80,7 @@ const state = {
   lockedAt: null,
   lockedRosterSnapshot: {},
   lastUpdated: null,
-  endpoint: "./live.json",
+  endpoint: "",
   warning: "",
   sourceLabel: "Using bundled sample data",
   searchTerm: "",
@@ -209,36 +211,107 @@ function saveSettings() {
   );
 }
 
-async function fetchLiveData() {
-  if (!state.endpoint) {
-    return {
-      ...SAMPLE_DATA,
-      sourceLabel: "Using bundled sample data",
-    };
-  }
-
-  const response = await fetch(state.endpoint, { cache: "no-store" });
+async function fetchJson(url) {
+  const separator = url.includes("?") ? "&" : "?";
+  const cacheBustedEndpoint = `${url}${separator}t=${Date.now()}`;
+  const response = await fetch(cacheBustedEndpoint, { cache: "no-store" });
   if (!response.ok) {
-    throw new Error(`Live data request failed with ${response.status}`);
+    throw new Error(`Request failed with ${response.status}`);
+  }
+  return response.json();
+}
+
+function inferCurrentRound(data) {
+  const currentRound = String(data?.currentRound || "");
+  if (currentRound.length === 4 && currentRound.includes("1")) {
+    return currentRound.indexOf("1") + 1;
+  }
+  return 1;
+}
+
+function transformMastersPayload(payload) {
+  if (!payload?.data || !Array.isArray(payload.data.player)) {
+    throw new Error("Masters feed payload was missing player data");
   }
 
-  const payload = await response.json();
+  const currentRound = inferCurrentRound(payload.data);
+  const pars = payload.data.pars?.[`round${currentRound}`] || state.pars;
+  const players = payload.data.player.map((player) => {
+    const round = player[`round${currentRound}`] || {};
+    const roundScores = Array.isArray(round.scores) ? round.scores : [];
+    const finished = player.thru === "F" || round.roundStatus === "Finished";
+    const remainingHoles = finished
+      ? []
+      : roundScores.flatMap((score, index) => (score === null ? [index + 1] : []));
+    const currentHole = finished
+      ? 18
+      : (() => {
+          const digits = String(player.thru || "").replace(/\D/g, "");
+          return digits ? Number(digits) : roundScores.reduce((last, score, index) => (score !== null ? index + 1 : last), 0);
+        })();
+
+    return {
+      id: String(player.id),
+      name: player.full_name,
+      currentScore: Number(player.topar === "E" || player.topar === "" ? 0 : player.topar),
+      currentHole,
+      finished,
+      remainingHoles,
+      position: player.pos || "",
+      thru: player.thru || "",
+      currentRound,
+      roundScores,
+    };
+  });
+
+  return {
+    sourceLabel: "Live Masters feed",
+    pars,
+    players,
+  };
+}
+
+function transformLiveJsonPayload(payload, endpointLabel) {
   if (!payload || !Array.isArray(payload.players)) {
     throw new Error("Endpoint must return a JSON object with a players array");
   }
 
   return {
-    sourceLabel: `Live endpoint: ${state.endpoint}`,
+    sourceLabel: endpointLabel,
     holeValues: payload.holeValues || DEFAULT_HOLE_VALUES,
     pars: payload.pars,
     players: payload.players,
   };
 }
 
+async function fetchLiveData() {
+  if (state.endpoint) {
+    const payload = await fetchJson(state.endpoint);
+    return transformLiveJsonPayload(payload, `Custom endpoint: ${state.endpoint}`);
+  }
+
+  try {
+    const payload = await fetchJson(MASTERS_SCORES_URL);
+    return transformMastersPayload(payload);
+  } catch (mastersError) {
+    try {
+      const payload = await fetchJson(FALLBACK_LIVE_JSON_URL);
+      return transformLiveJsonPayload(payload, `Fallback live.json (${mastersError.message})`);
+    } catch (liveJsonError) {
+      return {
+        ...SAMPLE_DATA,
+        pars: state.pars,
+        sourceLabel: "Using bundled sample data",
+        warning: `Masters feed failed (${mastersError.message}); live.json fallback failed (${liveJsonError.message})`,
+      };
+    }
+  }
+}
+
 async function refreshData() {
   try {
     const payload = await fetchLiveData();
-    state.warning = "";
+    state.warning = payload.warning || "";
     state.sourceLabel = payload.sourceLabel;
     state.holeValues = { ...DEFAULT_HOLE_VALUES, ...(payload.holeValues || {}) };
     state.pars = Array.isArray(payload.pars) && payload.pars.length ? payload.pars : state.pars;

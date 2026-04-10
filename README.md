@@ -9,7 +9,8 @@ Static single-page app for a Masters party salary-cap game.
 - roster lock persisted in `localStorage`
 - refresh-safe state after lock
 - live team score once locked
-- configurable JSON endpoint for live player data
+- direct browser fetch from the live Masters feed by default
+- configurable JSON endpoint override for live player data
 - bundled sample data fallback so the page works immediately
 
 ## Pricing
@@ -58,10 +59,9 @@ The repo includes:
 
 ## Notes
 
-- A pure static browser app may not be able to fetch directly from `masters.com` because of CORS restrictions.
-- The intended setup is either:
-  - a local `live.json` file refreshed by GitHub Actions, or
-  - another endpoint that serves the same JSON shape
+- The app now tries the live Masters feed directly from the browser first.
+- If that fails, it falls back to `./live.json`.
+- If that also fails, it falls back to bundled sample data.
 
 ## Run
 
