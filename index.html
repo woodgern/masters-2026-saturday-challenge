@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masters Saturday Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="page-shell" class="page-shell">
+      <header class="hero">
+        <div class="hero-brand">
+          <img class="masters-logo" src="./assets/masters-logo.png" alt="Masters logo" />
+          <div class="hero-copy">
+            <p class="eyebrow">Saturday Masters Party</p>
+            <h1>Masters Saturday Challenge</h1>
+            <p class="hero-text">
+              Pick five golfers. Stay under the cap. Lock it in. Lowest team score when Saturday wraps wins.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-layout">
+        <section class="draft-top">
+          <section class="panel budget-panel">
+            <div class="budget-card">
+              <div class="budget-topline">
+                <span id="lock-status">Drafting</span>
+                <strong id="roster-count">0 / 5</strong>
+              </div>
+              <div class="budget-main">
+                <p>Remaining Budget</p>
+                <strong id="budget-remaining">$100</strong>
+              </div>
+              <div class="budget-stats">
+                <div>
+                  <span>Cap</span>
+                  <strong id="budget-total">$100</strong>
+                </div>
+                <div>
+                  <span>Spent</span>
+                  <strong id="budget-used">$0</strong>
+                </div>
+                <div>
+                  <span>Team Score</span>
+                  <strong id="team-score">--</strong>
+                </div>
+              </div>
+              <p id="lock-message" class="lock-message">
+                Pick 5 golfers and stay at or under $100 to lock your roster.
+              </p>
+              <button id="lock-button" class="button button-primary" type="button">Lock Roster</button>
+            </div>
+          </section>
+
+          <section class="panel roster-panel">
+            <div class="section-heading">
+              <div>
+                <h2 id="roster-heading">Your Team</h2>
+              </div>
+            </div>
+            <ul id="roster-list" class="roster-list"></ul>
+          </section>
+        </section>
+
+        <section class="panel board-panel">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Player Pool</p>
+              <h2>Available Golfers</h2>
+            </div>
+            <div class="mini-meta">
+              <span>Updated <strong id="last-updated">Not loaded</strong></span>
+            </div>
+          </div>
+
+          <label class="search-field" for="player-search">
+            <span>Search golfers</span>
+            <input id="player-search" type="search" placeholder="Search by golfer name" />
+          </label>
+
+          <div id="player-table-body" class="player-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <div class="footer-meta">
+          <span id="data-source-label">Using bundled sample data</span>
+          <span id="data-warning" class="warning-text"></span>
+        </div>
+
+        <details class="admin-drawer">
+          <summary>Admin</summary>
+          <div class="admin-grid">
+            <label class="field">
+              <span>Live JSON Endpoint</span>
+              <input id="endpoint-input" type="url" placeholder="./live.json" />
+            </label>
+            <div class="admin-actions">
+              <button id="refresh-button" class="button button-secondary" type="button">Refresh Scores</button>
+              <button id="save-endpoint-button" class="button button-secondary" type="button">Save Endpoint</button>
+              <button id="reset-button" class="button button-ghost" type="button">Reset Roster</button>
+            </div>
+          </div>
+        </details>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
