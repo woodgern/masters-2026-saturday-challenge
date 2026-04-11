@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-11T22:59:52.662739+00:00",
+  "generatedAt": "2026-04-11T23:36:30.459479+00:00",
   "source": "https://www.masters.com/en_US/scores/feeds/2026/scores.json",
   "currentRound": 3,
-  "wallClockTime": "18:59:13 2026-04-11",
+  "wallClockTime": "19:01:08 2026-04-11",
   "pars": [
     4,
     5,
@@ -60,13 +60,11 @@
       "id": "28237",
       "name": "Rory McIlroy",
       "currentScore": -11,
-      "currentHole": 17,
-      "finished": false,
-      "remainingHoles": [
-        18
-      ],
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
       "position": "T1",
-      "thru": "17",
+      "thru": "F",
       "currentRound": 3,
       "roundScores": [
         5,
@@ -86,7 +84,7 @@
         4,
         3,
         5,
-        null
+        4
       ],
       "teeTime": "2:50 PM"
     },
@@ -94,13 +92,11 @@
       "id": "47504",
       "name": "Sam Burns",
       "currentScore": -10,
-      "currentHole": 17,
-      "finished": false,
-      "remainingHoles": [
-        18
-      ],
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
       "position": "3",
-      "thru": "17",
+      "thru": "F",
       "currentRound": 3,
       "roundScores": [
         3,
@@ -120,7 +116,7 @@
         5,
         3,
         4,
-        null
+        4
       ],
       "teeTime": "2:50 PM"
     },
