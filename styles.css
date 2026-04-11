@@ -366,6 +366,7 @@ summary {
 }
 
 .score-hole {
+  position: relative;
   display: grid;
   gap: 2px;
   justify-items: center;
@@ -465,6 +466,46 @@ summary {
 .score-hole-double {
   background: rgba(0, 0, 0, 0.02);
   border-color: rgba(0, 0, 0, 0.04);
+}
+
+.score-hole-live {
+  border-color: rgba(0, 103, 71, 0.18);
+  background: rgba(0, 103, 71, 0.05);
+  animation: score-hole-pulse 3.8s ease-in-out infinite;
+}
+
+.score-hole-live::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 0 rgba(0, 103, 71, 0.14);
+  animation: score-hole-ring 3.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes score-hole-pulse {
+  0%, 100% {
+    transform: translateY(0);
+    background: rgba(0, 103, 71, 0.045);
+    border-color: rgba(0, 103, 71, 0.15);
+  }
+
+  50% {
+    transform: translateY(-1px);
+    background: rgba(0, 103, 71, 0.08);
+    border-color: rgba(0, 103, 71, 0.24);
+  }
+}
+
+@keyframes score-hole-ring {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 103, 71, 0.08);
+  }
+
+  50% {
+    box-shadow: 0 0 0 4px rgba(0, 103, 71, 0);
+  }
 }
 
 .empty-state {

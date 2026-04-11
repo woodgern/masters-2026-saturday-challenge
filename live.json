@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-11T13:50:59.529821+00:00",
+  "generatedAt": "2026-04-11T14:49:29.830877+00:00",
   "source": "https://www.masters.com/en_US/scores/feeds/2026/scores.json",
   "currentRound": 3,
-  "wallClockTime": "09:50:06 2026-04-11",
+  "wallClockTime": "10:48:55 2026-04-11",
   "pars": [
     4,
     5,
@@ -72,7 +72,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:50 PM"
     },
     {
       "id": "47504",
@@ -122,7 +123,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:50 PM"
     },
     {
       "id": "34360",
@@ -172,7 +174,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:39 PM"
     },
     {
       "id": "22405",
@@ -222,7 +225,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:39 PM"
     },
     {
       "id": "33204",
@@ -272,7 +276,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:28 PM"
     },
     {
       "id": "30911",
@@ -322,7 +327,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:28 PM"
     },
     {
       "id": "51766",
@@ -372,7 +378,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:17 PM"
     },
     {
       "id": "34363",
@@ -422,7 +429,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:17 PM"
     },
     {
       "id": "35296",
@@ -472,7 +480,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:06 PM"
     },
     {
       "id": "49855",
@@ -522,7 +531,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "2:06 PM"
     },
     {
       "id": "28089",
@@ -572,7 +582,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:55 PM"
     },
     {
       "id": "57366",
@@ -622,7 +633,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:55 PM"
     },
     {
       "id": "59095",
@@ -672,7 +684,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:33 PM"
     },
     {
       "id": "36689",
@@ -722,7 +735,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:33 PM"
     },
     {
       "id": "54591",
@@ -772,7 +786,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:22 PM"
     },
     {
       "id": "39977",
@@ -822,7 +837,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:22 PM"
     },
     {
       "id": "47420",
@@ -872,7 +888,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:11 PM"
     },
     {
       "id": "48081",
@@ -922,7 +939,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:11 PM"
     },
     {
       "id": "32839",
@@ -972,7 +990,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:00 PM"
     },
     {
       "id": "61522",
@@ -1022,7 +1041,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "1:00 PM"
     },
     {
       "id": "25493",
@@ -1072,7 +1092,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:49 PM"
     },
     {
       "id": "40098",
@@ -1122,7 +1143,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:49 PM"
     },
     {
       "id": "50525",
@@ -1172,7 +1194,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:38 PM"
     },
     {
       "id": "46443",
@@ -1222,7 +1245,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:38 PM"
     },
     {
       "id": "52955",
@@ -1272,7 +1296,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:16 PM"
     },
     {
       "id": "46046",
@@ -1322,7 +1347,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:16 PM"
     },
     {
       "id": "34099",
@@ -1372,7 +1398,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:05 PM"
     },
     {
       "id": "59018",
@@ -1422,7 +1449,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "12:05 PM"
     },
     {
       "id": "30925",
@@ -1472,7 +1500,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:54 AM"
     },
     {
       "id": "34098",
@@ -1522,7 +1551,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:54 AM"
     },
     {
       "id": "35450",
@@ -1572,7 +1602,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:43 AM"
     },
     {
       "id": "39971",
@@ -1622,7 +1653,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:43 AM"
     },
     {
       "id": "46414",
@@ -1672,7 +1704,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:32 AM"
     },
     {
       "id": "60004",
@@ -1722,7 +1755,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:32 AM"
     },
     {
       "id": "34046",
@@ -1772,7 +1806,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:21 AM"
     },
     {
       "id": "49960",
@@ -1822,7 +1857,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:21 AM"
     },
     {
       "id": "51003",
@@ -1872,7 +1908,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:10 AM"
     },
     {
       "id": "59141",
@@ -1922,7 +1959,205 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "11:10 AM"
+    },
+    {
+      "id": "46970",
+      "name": "Jon Rahm",
+      "currentScore": 2,
+      "currentHole": 4,
+      "finished": false,
+      "remainingHoles": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T39",
+      "thru": "4",
+      "currentRound": 3,
+      "roundScores": [
+        3,
+        5,
+        3,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "9:53 AM"
+    },
+    {
+      "id": "46717",
+      "name": "Viktor Hovland",
+      "currentScore": 2,
+      "currentHole": 1,
+      "finished": false,
+      "remainingHoles": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T39",
+      "thru": "1",
+      "currentRound": 3,
+      "roundScores": [
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "10:26 AM"
+    },
+    {
+      "id": "33448",
+      "name": "Justin Thomas",
+      "currentScore": 2,
+      "currentHole": 1,
+      "finished": false,
+      "remainingHoles": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T39",
+      "thru": "1",
+      "currentRound": 3,
+      "roundScores": [
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "10:37 AM"
+    },
+    {
+      "id": "31323",
+      "name": "Gary Woodland",
+      "currentScore": 2,
+      "currentHole": 1,
+      "finished": false,
+      "remainingHoles": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T39",
+      "thru": "1",
+      "currentRound": 3,
+      "roundScores": [
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "10:37 AM"
     },
     {
       "id": "55893",
@@ -1972,7 +2207,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "10:48 AM"
     },
     {
       "id": "24502",
@@ -2022,18 +2258,108 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "10:48 AM"
     },
     {
-      "id": "33448",
-      "name": "Justin Thomas",
-      "currentScore": 2,
-      "currentHole": 0,
+      "id": "27349",
+      "name": "Alex Noren",
+      "currentScore": 3,
+      "currentHole": 6,
       "finished": false,
       "remainingHoles": [
-        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T45",
+      "thru": "6",
+      "currentRound": 3,
+      "roundScores": [
+        5,
+        4,
+        4,
         2,
+        4,
         3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "9:31 AM"
+    },
+    {
+      "id": "37455",
+      "name": "Si Woo Kim",
+      "currentScore": 3,
+      "currentHole": 4,
+      "finished": false,
+      "remainingHoles": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T45",
+      "thru": "4",
+      "currentRound": 3,
+      "roundScores": [
+        4,
+        4,
+        4,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "9:53 AM"
+    },
+    {
+      "id": "27644",
+      "name": "Brian Harman",
+      "currentScore": 3,
+      "currentHole": 3,
+      "finished": false,
+      "remainingHoles": [
         4,
         5,
         6,
@@ -2050,163 +2376,13 @@
         17,
         18
       ],
-      "position": "T39",
-      "thru": "",
+      "position": "T45",
+      "thru": "3",
       "currentRound": 3,
       "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "31323",
-      "name": "Gary Woodland",
-      "currentScore": 2,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
         4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T39",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "33141",
-      "name": "Keegan Bradley",
-      "currentScore": 2,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
         4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T39",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "46717",
-      "name": "Viktor Hovland",
-      "currentScore": 2,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
         4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T39",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -2222,17 +2398,16 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "10:04 AM"
     },
     {
       "id": "21209",
       "name": "Sergio Garcia",
       "currentScore": 3,
-      "currentHole": 0,
+      "currentHole": 2,
       "finished": false,
       "remainingHoles": [
-        1,
-        2,
         3,
         4,
         5,
@@ -2251,11 +2426,11 @@
         18
       ],
       "position": "T45",
-      "thru": "",
+      "thru": "2",
       "currentRound": 3,
       "roundScores": [
-        null,
-        null,
+        4,
+        5,
         null,
         null,
         null,
@@ -2272,16 +2447,65 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "10:15 AM"
     },
     {
       "id": "46442",
       "name": "Maverick McNealy",
       "currentScore": 3,
-      "currentHole": 0,
+      "currentHole": 2,
       "finished": false,
       "remainingHoles": [
-        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T45",
+      "thru": "2",
+      "currentRound": 3,
+      "roundScores": [
+        5,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "10:15 AM"
+    },
+    {
+      "id": "33141",
+      "name": "Keegan Bradley",
+      "currentScore": 3,
+      "currentHole": 1,
+      "finished": false,
+      "remainingHoles": [
         2,
         3,
         4,
@@ -2301,109 +2525,10 @@
         18
       ],
       "position": "T45",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "48117",
-      "name": "Kurt Kitayama",
-      "currentScore": 4,
-      "currentHole": 1,
-      "finished": false,
-      "remainingHoles": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T47",
       "thru": "1",
       "currentRound": 3,
       "roundScores": [
-        4,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "27644",
-      "name": "Brian Harman",
-      "currentScore": 4,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
-        4,
         5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T47",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
         null,
         null,
         null,
@@ -2421,220 +2546,16 @@
         null,
         null,
         null
-      ]
-    },
-    {
-      "id": "39997",
-      "name": "Corey Conners",
-      "currentScore": 4,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
       ],
-      "position": "T47",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "46970",
-      "name": "Jon Rahm",
-      "currentScore": 4,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T47",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "37455",
-      "name": "Si Woo Kim",
-      "currentScore": 4,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T47",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": "26331",
-      "name": "Charl Schwartzel",
-      "currentScore": 4,
-      "currentHole": 0,
-      "finished": false,
-      "remainingHoles": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T47",
-      "thru": "",
-      "currentRound": 3,
-      "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
+      "teeTime": "10:26 AM"
     },
     {
       "id": "52686",
       "name": "Rasmus H\u00f8jgaard",
       "currentScore": 4,
-      "currentHole": 0,
+      "currentHole": 5,
       "finished": false,
       "remainingHoles": [
-        1,
-        2,
-        3,
-        4,
-        5,
         6,
         7,
         8,
@@ -2649,15 +2570,15 @@
         17,
         18
       ],
-      "position": "T47",
-      "thru": "",
+      "position": "T51",
+      "thru": "5",
       "currentRound": 3,
       "roundScores": [
-        null,
-        null,
-        null,
-        null,
-        null,
+        5,
+        5,
+        3,
+        4,
+        3,
         null,
         null,
         null,
@@ -2671,17 +2592,16 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "9:42 AM"
     },
     {
-      "id": "27349",
-      "name": "Alex Noren",
-      "currentScore": 5,
-      "currentHole": 1,
+      "id": "39997",
+      "name": "Corey Conners",
+      "currentScore": 4,
+      "currentHole": 3,
       "finished": false,
       "remainingHoles": [
-        2,
-        3,
         4,
         5,
         6,
@@ -2698,13 +2618,13 @@
         17,
         18
       ],
-      "position": "54",
-      "thru": "1",
+      "position": "T51",
+      "thru": "3",
       "currentRound": 3,
       "roundScores": [
-        5,
-        null,
-        null,
+        4,
+        6,
+        3,
         null,
         null,
         null,
@@ -2720,7 +2640,99 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": "10:04 AM"
+    },
+    {
+      "id": "48117",
+      "name": "Kurt Kitayama",
+      "currentScore": 6,
+      "currentHole": 6,
+      "finished": false,
+      "remainingHoles": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T53",
+      "thru": "6",
+      "currentRound": 3,
+      "roundScores": [
+        4,
+        6,
+        5,
+        3,
+        4,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "9:31 AM"
+    },
+    {
+      "id": "26331",
+      "name": "Charl Schwartzel",
+      "currentScore": 6,
+      "currentHole": 5,
+      "finished": false,
+      "remainingHoles": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "position": "T53",
+      "thru": "5",
+      "currentRound": 3,
+      "roundScores": [
+        5,
+        4,
+        5,
+        4,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "teeTime": "9:42 AM"
     },
     {
       "id": "32139",
@@ -2770,7 +2782,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "57975",
@@ -2820,7 +2833,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "39324",
@@ -2870,7 +2884,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "29936",
@@ -2920,7 +2935,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "25804",
@@ -2970,7 +2986,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "24024",
@@ -3020,7 +3037,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "52453",
@@ -3070,7 +3088,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "56630",
@@ -3120,7 +3139,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "47959",
@@ -3170,7 +3190,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "51997",
@@ -3220,7 +3241,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "50823",
@@ -3270,7 +3292,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "52215",
@@ -3320,7 +3343,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "52689",
@@ -3370,7 +3394,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "35891",
@@ -3420,7 +3445,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "39975",
@@ -3470,7 +3496,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "68932",
@@ -3520,7 +3547,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "40026",
@@ -3570,7 +3598,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "70148",
@@ -3620,7 +3649,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "57688",
@@ -3670,7 +3700,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "1226",
@@ -3720,7 +3751,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "6373",
@@ -3770,7 +3802,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "68607",
@@ -3820,7 +3853,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "10423",
@@ -3870,7 +3904,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "6567",
@@ -3920,7 +3955,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "37378",
@@ -3970,7 +4006,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "70146",
@@ -4020,7 +4057,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "63454",
@@ -4070,7 +4108,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "33667",
@@ -4120,7 +4159,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "52666",
@@ -4170,7 +4210,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "51977",
@@ -4220,7 +4261,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "51349",
@@ -4270,7 +4312,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "70145",
@@ -4320,7 +4363,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "46879",
@@ -4370,7 +4414,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "63343",
@@ -4420,7 +4465,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "70147",
@@ -4470,7 +4516,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "20848",
@@ -4520,7 +4567,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     },
     {
       "id": "47995",
@@ -4570,7 +4618,8 @@
         null,
         null,
         null
-      ]
+      ],
+      "teeTime": ""
     }
   ]
 }

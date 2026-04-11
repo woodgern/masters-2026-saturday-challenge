@@ -91,6 +91,7 @@ def transform_player(player: dict, current_round_no: int) -> dict:
         "thru": thru,
         "currentRound": current_round_no,
         "roundScores": round_scores,
+        "teeTime": round_data.get("teetime") or player.get("teetime") or "",
     }
 
 

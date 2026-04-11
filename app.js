@@ -282,6 +282,7 @@ function transformMastersPayload(payload) {
       thru: player.thru || "",
       currentRound,
       roundScores,
+      teeTime: round.teetime || player.teetime || "",
     };
   });
 
@@ -338,6 +339,7 @@ async function refreshData() {
     state.pars = Array.isArray(payload.pars) && payload.pars.length ? payload.pars : state.pars;
     const enrichedPlayers = payload.players
       .map((player) => normalizePlayer(player))
+      .filter((player) => isPlayerEligible(player))
       .map((player) => enrichPlayer(player, state.holeValues))
       .sort((a, b) => a.expectedScore - b.expectedScore || a.name.localeCompare(b.name));
     state.players = applyRelativePricing(enrichedPlayers)
@@ -350,6 +352,7 @@ async function refreshData() {
     state.pars = [4, 5, 4, 3, 4, 3, 4, 5, 4, 4, 4, 3, 5, 4, 5, 3, 4, 4];
     const enrichedPlayers = SAMPLE_DATA.players
       .map(normalizePlayer)
+      .filter((player) => isPlayerEligible(player))
       .map((player) => enrichPlayer(player, state.holeValues))
       .sort((a, b) => a.expectedScore - b.expectedScore || a.name.localeCompare(b.name));
     state.players = applyRelativePricing(enrichedPlayers)
@@ -371,8 +374,21 @@ function normalizePlayer(player) {
     thru: player.thru || "",
     currentRound: player.currentRound || null,
     roundScores: Array.isArray(player.roundScores) ? player.roundScores : [],
+    teeTime: player.teeTime || "",
     remainingHoles: Array.isArray(player.remainingHoles) ? player.remainingHoles.map(Number) : undefined,
   };
+}
+
+function isPlayerEligible(player) {
+  if ((player.currentRound || 0) < 3) {
+    return true;
+  }
+
+  const hasStartedRound = player.finished
+    || player.currentHole > 0
+    || player.roundScores.some((score) => score !== null && score !== undefined);
+
+  return Boolean(player.teeTime) || hasStartedRound;
 }
 
 function buildScorecardMarkup(player) {
@@ -385,6 +401,8 @@ function buildScorecardMarkup(player) {
     for (let hole = start; hole <= end; hole += 1) {
       const par = state.pars[hole - 1];
       const score = player.roundScores[hole - 1];
+      const liveHole = player.finished ? null : Math.min(18, player.currentHole + 1);
+      const isCurrentHole = liveHole === hole;
       let tone = "pending";
       let shapeClass = "";
       if (score !== null && score !== undefined) {
@@ -406,7 +424,7 @@ function buildScorecardMarkup(player) {
         }
       }
       cells.push(`
-        <div class="score-hole score-hole-${tone}">
+        <div class="score-hole score-hole-${tone} ${isCurrentHole ? "score-hole-live" : ""}">
           <span class="score-hole-number">${hole}</span>
           <strong class="score-mark ${shapeClass}">${score ?? "-"}</strong>
         </div>
