@@ -149,7 +149,6 @@ function enrichPlayer(player, holeValues) {
   const expectedRemaining = getExpectedRemainingValue(player, holeValues);
   const strengthAdjustment = PLAYER_STRENGTH_ADJUSTMENTS[player.name] || 0;
   const expectedScore = Number((player.currentScore + expectedRemaining + strengthAdjustment).toFixed(2));
-  const price = Math.round(4 + 16 * (1.11 ** (-expectedScore)));
 
   return {
     ...player,
@@ -157,8 +156,30 @@ function enrichPlayer(player, holeValues) {
     expectedRemaining,
     strengthAdjustment,
     expectedScore,
-    price,
+    price: 0,
   };
+}
+
+function applyRelativePricing(players) {
+  if (!players.length) {
+    return players;
+  }
+
+  const sortedExpectedScores = players
+    .map((player) => player.expectedScore)
+    .sort((a, b) => a - b);
+  const referenceExpectedScore = sortedExpectedScores[Math.min(4, sortedExpectedScores.length - 1)];
+
+  return players.map((player) => {
+    const strokesFromReference = Number((player.expectedScore - referenceExpectedScore).toFixed(2));
+    const price = Math.max(4, Math.min(34, Math.round(20 - 3 * strokesFromReference)));
+
+    return {
+      ...player,
+      strokesBehindBest: strokesFromReference,
+      price,
+    };
+  });
 }
 
 function loadStoredState() {
@@ -315,9 +336,11 @@ async function refreshData() {
     state.sourceLabel = payload.sourceLabel;
     state.holeValues = { ...DEFAULT_HOLE_VALUES, ...(payload.holeValues || {}) };
     state.pars = Array.isArray(payload.pars) && payload.pars.length ? payload.pars : state.pars;
-    state.players = payload.players
+    const enrichedPlayers = payload.players
       .map((player) => normalizePlayer(player))
       .map((player) => enrichPlayer(player, state.holeValues))
+      .sort((a, b) => a.expectedScore - b.expectedScore || a.name.localeCompare(b.name));
+    state.players = applyRelativePricing(enrichedPlayers)
       .sort((a, b) => a.expectedScore - b.expectedScore || a.name.localeCompare(b.name));
   } catch (error) {
     console.error(error);
@@ -325,9 +348,11 @@ async function refreshData() {
     state.sourceLabel = "Using bundled sample data";
     state.holeValues = { ...DEFAULT_HOLE_VALUES };
     state.pars = [4, 5, 4, 3, 4, 3, 4, 5, 4, 4, 4, 3, 5, 4, 5, 3, 4, 4];
-    state.players = SAMPLE_DATA.players
+    const enrichedPlayers = SAMPLE_DATA.players
       .map(normalizePlayer)
       .map((player) => enrichPlayer(player, state.holeValues))
+      .sort((a, b) => a.expectedScore - b.expectedScore || a.name.localeCompare(b.name));
+    state.players = applyRelativePricing(enrichedPlayers)
       .sort((a, b) => a.expectedScore - b.expectedScore || a.name.localeCompare(b.name));
   }
 
@@ -539,7 +564,7 @@ function renderRoster() {
       removeButton.type = "button";
       removeButton.textContent = "Remove";
       removeButton.addEventListener("click", () => removePlayer(player.id));
-      item.appendChild(removeButton);
+      main.appendChild(removeButton);
     }
 
     elements.rosterList.appendChild(item);
@@ -634,7 +659,8 @@ function renderSummary() {
 
   const canLock = !state.locked && state.selectedIds.length === ROSTER_SIZE && remaining >= 0;
   elements.lockButton.disabled = !canLock;
-  elements.lockButton.textContent = state.locked ? "Roster Locked" : "Lock Roster";
+  elements.lockButton.textContent = "Lock Roster";
+  elements.lockButton.hidden = state.locked;
 
   if (state.locked) {
     elements.lockMessage.textContent = state.lockedAt
