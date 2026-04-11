@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-11T22:26:53.104678+00:00",
+  "generatedAt": "2026-04-11T22:59:52.662739+00:00",
   "source": "https://www.masters.com/en_US/scores/feeds/2026/scores.json",
   "currentRound": 3,
-  "wallClockTime": "18:26:33 2026-04-11",
+  "wallClockTime": "18:59:13 2026-04-11",
   "pars": [
     4,
     5,
@@ -25,49 +25,13 @@
   ],
   "players": [
     {
-      "id": "28237",
-      "name": "Rory McIlroy",
-      "currentScore": -12,
-      "currentHole": 15,
-      "finished": false,
-      "remainingHoles": [
-        16,
-        17,
-        18
-      ],
-      "position": "1",
-      "thru": "15",
-      "currentRound": 3,
-      "roundScores": [
-        5,
-        5,
-        3,
-        3,
-        4,
-        3,
-        4,
-        5,
-        4,
-        3,
-        6,
-        4,
-        5,
-        3,
-        4,
-        null,
-        null,
-        null
-      ],
-      "teeTime": "2:50 PM"
-    },
-    {
       "id": "57366",
       "name": "Cameron Young",
       "currentScore": -11,
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "2",
+      "position": "T1",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -93,18 +57,50 @@
       "teeTime": "1:55 PM"
     },
     {
+      "id": "28237",
+      "name": "Rory McIlroy",
+      "currentScore": -11,
+      "currentHole": 17,
+      "finished": false,
+      "remainingHoles": [
+        18
+      ],
+      "position": "T1",
+      "thru": "17",
+      "currentRound": 3,
+      "roundScores": [
+        5,
+        5,
+        3,
+        3,
+        4,
+        3,
+        4,
+        5,
+        4,
+        3,
+        6,
+        4,
+        5,
+        3,
+        4,
+        3,
+        5,
+        null
+      ],
+      "teeTime": "2:50 PM"
+    },
+    {
       "id": "47504",
       "name": "Sam Burns",
       "currentScore": -10,
-      "currentHole": 15,
+      "currentHole": 17,
       "finished": false,
       "remainingHoles": [
-        16,
-        17,
         18
       ],
       "position": "3",
-      "thru": "15",
+      "thru": "17",
       "currentRound": 3,
       "roundScores": [
         3,
@@ -122,8 +118,8 @@
         4,
         4,
         5,
-        null,
-        null,
+        3,
+        4,
         null
       ],
       "teeTime": "2:50 PM"
@@ -132,13 +128,11 @@
       "id": "33204",
       "name": "Shane Lowry",
       "currentScore": -9,
-      "currentHole": 17,
-      "finished": false,
-      "remainingHoles": [
-        18
-      ],
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
       "position": "4",
-      "thru": "17",
+      "thru": "F",
       "currentRound": 3,
       "roundScores": [
         4,
@@ -158,7 +152,7 @@
         5,
         3,
         4,
-        null
+        4
       ],
       "teeTime": "2:28 PM"
     },
@@ -198,14 +192,11 @@
       "id": "22405",
       "name": "Justin Rose",
       "currentScore": -8,
-      "currentHole": 16,
-      "finished": false,
-      "remainingHoles": [
-        17,
-        18
-      ],
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
       "position": "T5",
-      "thru": "16",
+      "thru": "F",
       "currentRound": 3,
       "roundScores": [
         4,
@@ -224,8 +215,8 @@
         4,
         5,
         3,
-        null,
-        null
+        4,
+        4
       ],
       "teeTime": "2:39 PM"
     },
@@ -294,48 +285,13 @@
       "teeTime": "2:06 PM"
     },
     {
-      "id": "34360",
-      "name": "Patrick Reed",
-      "currentScore": -7,
-      "currentHole": 16,
-      "finished": false,
-      "remainingHoles": [
-        17,
-        18
-      ],
-      "position": "T7",
-      "thru": "16",
-      "currentRound": 3,
-      "roundScores": [
-        3,
-        4,
-        3,
-        4,
-        5,
-        3,
-        4,
-        5,
-        4,
-        5,
-        4,
-        3,
-        4,
-        4,
-        5,
-        3,
-        null,
-        null
-      ],
-      "teeTime": "2:39 PM"
-    },
-    {
       "id": "35450",
       "name": "Patrick Cantlay",
       "currentScore": -6,
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T10",
+      "position": "T9",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -367,7 +323,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T10",
+      "position": "T9",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -391,6 +347,38 @@
         3
       ],
       "teeTime": "11:54 AM"
+    },
+    {
+      "id": "34360",
+      "name": "Patrick Reed",
+      "currentScore": -6,
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "T9",
+      "thru": "F",
+      "currentRound": 3,
+      "roundScores": [
+        3,
+        4,
+        3,
+        4,
+        5,
+        3,
+        4,
+        5,
+        4,
+        5,
+        4,
+        3,
+        4,
+        4,
+        5,
+        3,
+        4,
+        5
+      ],
+      "teeTime": "2:39 PM"
     },
     {
       "id": "50525",
@@ -489,47 +477,13 @@
       "teeTime": "1:22 PM"
     },
     {
-      "id": "51766",
-      "name": "Wyndham Clark",
-      "currentScore": -5,
-      "currentHole": 17,
-      "finished": false,
-      "remainingHoles": [
-        18
-      ],
-      "position": "T12",
-      "thru": "17",
-      "currentRound": 3,
-      "roundScores": [
-        5,
-        4,
-        2,
-        3,
-        4,
-        3,
-        4,
-        5,
-        3,
-        4,
-        5,
-        3,
-        5,
-        4,
-        5,
-        3,
-        5,
-        null
-      ],
-      "teeTime": "2:17 PM"
-    },
-    {
       "id": "59018",
       "name": "Ryan Gerard",
       "currentScore": -4,
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T16",
+      "position": "T15",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -561,7 +515,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T16",
+      "position": "T15",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -593,7 +547,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T16",
+      "position": "T15",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -619,16 +573,78 @@
       "teeTime": "1:33 PM"
     },
     {
+      "id": "51766",
+      "name": "Wyndham Clark",
+      "currentScore": -4,
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "T15",
+      "thru": "F",
+      "currentRound": 3,
+      "roundScores": [
+        5,
+        4,
+        2,
+        3,
+        4,
+        3,
+        4,
+        5,
+        3,
+        4,
+        5,
+        3,
+        5,
+        4,
+        5,
+        3,
+        5,
+        5
+      ],
+      "teeTime": "2:17 PM"
+    },
+    {
+      "id": "34363",
+      "name": "Tyrrell Hatton",
+      "currentScore": -4,
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "T15",
+      "thru": "F",
+      "currentRound": 3,
+      "roundScores": [
+        4,
+        5,
+        4,
+        3,
+        4,
+        4,
+        4,
+        5,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        5,
+        3,
+        5,
+        3
+      ],
+      "teeTime": "2:17 PM"
+    },
+    {
       "id": "30911",
       "name": "Tommy Fleetwood",
       "currentScore": -4,
-      "currentHole": 17,
-      "finished": false,
-      "remainingHoles": [
-        18
-      ],
-      "position": "T16",
-      "thru": "17",
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "T15",
+      "thru": "F",
       "currentRound": 3,
       "roundScores": [
         4,
@@ -648,7 +664,7 @@
         5,
         3,
         4,
-        null
+        4
       ],
       "teeTime": "2:28 PM"
     },
@@ -659,7 +675,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -691,7 +707,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -723,7 +739,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -755,7 +771,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -787,7 +803,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -819,7 +835,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -851,7 +867,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -883,7 +899,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T20",
+      "position": "T21",
       "thru": "F",
       "currentRound": 3,
       "roundScores": [
@@ -907,40 +923,6 @@
         4
       ],
       "teeTime": "2:06 PM"
-    },
-    {
-      "id": "34363",
-      "name": "Tyrrell Hatton",
-      "currentScore": -3,
-      "currentHole": 17,
-      "finished": false,
-      "remainingHoles": [
-        18
-      ],
-      "position": "T20",
-      "thru": "17",
-      "currentRound": 3,
-      "roundScores": [
-        4,
-        5,
-        4,
-        3,
-        4,
-        4,
-        4,
-        5,
-        4,
-        4,
-        4,
-        3,
-        4,
-        4,
-        5,
-        3,
-        5,
-        null
-      ],
-      "teeTime": "2:17 PM"
     },
     {
       "id": "49960",
