@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-12T22:01:32.545967+00:00",
+  "generatedAt": "2026-04-12T22:41:39.015930+00:00",
   "source": "https://www.masters.com/en_US/scores/feeds/2026/scores.json",
   "currentRound": 4,
-  "wallClockTime": "18:00:21 2026-04-12",
+  "wallClockTime": "18:41:13 2026-04-12",
   "pars": [
     4,
     5,
@@ -28,16 +28,13 @@
       "id": "28237",
       "name": "Rory McIlroy",
       "currentScore": -13,
-      "currentHole": 14,
+      "currentHole": 17,
       "finished": false,
       "remainingHoles": [
-        15,
-        16,
-        17,
         18
       ],
       "position": "1",
-      "thru": "14",
+      "thru": "17",
       "currentRound": 4,
       "roundScores": [
         4,
@@ -54,9 +51,9 @@
         2,
         4,
         4,
-        null,
-        null,
-        null,
+        5,
+        3,
+        4,
         null
       ],
       "teeTime": "2:25 PM"
@@ -65,14 +62,11 @@
       "id": "46046",
       "name": "Scottie Scheffler",
       "currentScore": -11,
-      "currentHole": 16,
-      "finished": false,
-      "remainingHoles": [
-        17,
-        18
-      ],
-      "position": "T2",
-      "thru": "16",
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "2",
+      "thru": "F",
       "currentRound": 4,
       "roundScores": [
         3,
@@ -91,46 +85,10 @@
         4,
         4,
         2,
-        null,
-        null
+        4,
+        4
       ],
       "teeTime": "1:52 PM"
-    },
-    {
-      "id": "22405",
-      "name": "Justin Rose",
-      "currentScore": -11,
-      "currentHole": 15,
-      "finished": false,
-      "remainingHoles": [
-        16,
-        17,
-        18
-      ],
-      "position": "T2",
-      "thru": "15",
-      "currentRound": 4,
-      "roundScores": [
-        3,
-        5,
-        5,
-        3,
-        3,
-        3,
-        3,
-        4,
-        3,
-        4,
-        5,
-        4,
-        5,
-        4,
-        4,
-        null,
-        null,
-        null
-      ],
-      "teeTime": "2:03 PM"
     },
     {
       "id": "34363",
@@ -139,7 +97,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T4",
+      "position": "T3",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -171,7 +129,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T4",
+      "position": "T3",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -197,19 +155,48 @@
       "teeTime": "1:41 PM"
     },
     {
+      "id": "22405",
+      "name": "Justin Rose",
+      "currentScore": -10,
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "T3",
+      "thru": "F",
+      "currentRound": 4,
+      "roundScores": [
+        3,
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        4,
+        3,
+        4,
+        5,
+        4,
+        5,
+        4,
+        4,
+        3,
+        5,
+        4
+      ],
+      "teeTime": "2:03 PM"
+    },
+    {
       "id": "57366",
       "name": "Cameron Young",
       "currentScore": -10,
-      "currentHole": 14,
+      "currentHole": 17,
       "finished": false,
       "remainingHoles": [
-        15,
-        16,
-        17,
         18
       ],
-      "position": "T4",
-      "thru": "14",
+      "position": "T3",
+      "thru": "17",
       "currentRound": 4,
       "roundScores": [
         4,
@@ -226,9 +213,9 @@
         3,
         5,
         4,
-        null,
-        null,
-        null,
+        5,
+        3,
+        4,
         null
       ],
       "teeTime": "2:25 PM"
@@ -269,16 +256,13 @@
       "id": "47504",
       "name": "Sam Burns",
       "currentScore": -9,
-      "currentHole": 14,
+      "currentHole": 17,
       "finished": false,
       "remainingHoles": [
-        15,
-        16,
-        17,
         18
       ],
       "position": "T7",
-      "thru": "14",
+      "thru": "17",
       "currentRound": 4,
       "roundScores": [
         3,
@@ -295,9 +279,9 @@
         3,
         4,
         3,
-        null,
-        null,
-        null,
+        5,
+        2,
+        5,
         null
       ],
       "teeTime": "2:14 PM"
@@ -562,15 +546,11 @@
       "id": "28089",
       "name": "Jason Day",
       "currentScore": -5,
-      "currentHole": 15,
-      "finished": false,
-      "remainingHoles": [
-        16,
-        17,
-        18
-      ],
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
       "position": "T12",
-      "thru": "15",
+      "thru": "F",
       "currentRound": 4,
       "roundScores": [
         4,
@@ -588,9 +568,9 @@
         5,
         4,
         5,
-        null,
-        null,
-        null
+        3,
+        4,
+        4
       ],
       "teeTime": "2:03 PM"
     },
@@ -787,50 +767,13 @@
       "teeTime": "12:46 PM"
     },
     {
-      "id": "33204",
-      "name": "Shane Lowry",
-      "currentScore": -3,
-      "currentHole": 14,
-      "finished": false,
-      "remainingHoles": [
-        15,
-        16,
-        17,
-        18
-      ],
-      "position": "T21",
-      "thru": "14",
-      "currentRound": 4,
-      "roundScores": [
-        5,
-        4,
-        4,
-        4,
-        6,
-        3,
-        4,
-        5,
-        4,
-        4,
-        6,
-        4,
-        4,
-        5,
-        null,
-        null,
-        null,
-        null
-      ],
-      "teeTime": "2:14 PM"
-    },
-    {
       "id": "59141",
       "name": "Matt McCarty",
       "currentScore": -2,
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T25",
+      "position": "T24",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -862,7 +805,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T25",
+      "position": "T24",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -894,7 +837,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T25",
+      "position": "T24",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -926,7 +869,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T25",
+      "position": "T24",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -958,7 +901,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T25",
+      "position": "T24",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -990,7 +933,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T25",
+      "position": "T24",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -1014,6 +957,40 @@
         4
       ],
       "teeTime": "12:24 PM"
+    },
+    {
+      "id": "33204",
+      "name": "Shane Lowry",
+      "currentScore": -2,
+      "currentHole": 17,
+      "finished": false,
+      "remainingHoles": [
+        18
+      ],
+      "position": "T24",
+      "thru": "17",
+      "currentRound": 4,
+      "roundScores": [
+        5,
+        4,
+        4,
+        4,
+        6,
+        3,
+        4,
+        5,
+        4,
+        4,
+        6,
+        4,
+        4,
+        5,
+        4,
+        5,
+        4,
+        null
+      ],
+      "teeTime": "2:14 PM"
     },
     {
       "id": "27349",
@@ -1240,48 +1217,13 @@
       "teeTime": "1:08 PM"
     },
     {
-      "id": "35296",
-      "name": "Haotong Li",
-      "currentScore": 0,
-      "currentHole": 16,
-      "finished": false,
-      "remainingHoles": [
-        17,
-        18
-      ],
-      "position": "T33",
-      "thru": "16",
-      "currentRound": 4,
-      "roundScores": [
-        5,
-        4,
-        3,
-        3,
-        5,
-        4,
-        5,
-        4,
-        3,
-        4,
-        4,
-        6,
-        10,
-        3,
-        5,
-        3,
-        null,
-        null
-      ],
-      "teeTime": "1:52 PM"
-    },
-    {
       "id": "46970",
       "name": "Jon Rahm",
       "currentScore": 1,
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T39",
+      "position": "T38",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -1313,7 +1255,7 @@
       "currentHole": 18,
       "finished": true,
       "remainingHoles": [],
-      "position": "T39",
+      "position": "T38",
       "thru": "F",
       "currentRound": 4,
       "roundScores": [
@@ -1337,6 +1279,38 @@
         3
       ],
       "teeTime": "12:57 PM"
+    },
+    {
+      "id": "35296",
+      "name": "Haotong Li",
+      "currentScore": 1,
+      "currentHole": 18,
+      "finished": true,
+      "remainingHoles": [],
+      "position": "T38",
+      "thru": "F",
+      "currentRound": 4,
+      "roundScores": [
+        5,
+        4,
+        3,
+        3,
+        5,
+        4,
+        5,
+        4,
+        3,
+        4,
+        4,
+        6,
+        10,
+        3,
+        5,
+        3,
+        5,
+        4
+      ],
+      "teeTime": "1:52 PM"
     },
     {
       "id": "33448",
